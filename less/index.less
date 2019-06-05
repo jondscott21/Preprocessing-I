@@ -5,6 +5,16 @@
 */
 @blue-font: #359BD8;
 @green-font: #304153;
+@html-font: 62.5%;
+.reactive-flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+.span-background {
+	background: @blue-font;
+	padding: 2px 6px;
+	border-radius: 4px;
+}
 
 
 html, body, div, span, applet, object, iframe,
@@ -57,7 +67,7 @@ table {
 }
 
 html {
-	font-size: 62.5%;
+	font-size: @html-font;
 }
 
 html, body {
@@ -207,8 +217,7 @@ nav {
 // #### Skills Section ####
 
 .skills {
-	display: flex;
-	flex-wrap: wrap;
+	.reactive-flex();
 	justify-content: space-around;
 	margin-bottom: 15px;
 
@@ -239,9 +248,7 @@ nav {
 		margin-bottom: 5px;
 		span {
 			margin-top: 10px;
-			background: @blue-font;
-			padding: 2px 6px;
-			border-radius: 4px;
+			.span-background();
 		}
 	}
 
@@ -255,7 +262,7 @@ nav {
 
 			.year {
 				margin-left: 50px;
-				background: @blue-font;
+				.span-background();
 			}
 		}
 
