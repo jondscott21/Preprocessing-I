@@ -141,6 +141,7 @@ table {
 }
 html {
   font-size: 62.5%;
+  font-family: "Heebo";
 }
 html,
 body {
@@ -251,13 +252,14 @@ nav a:first-child {
 .top-content .about-me-block .contact-info p {
   margin-bottom: 5px;
 }
-.top-content .about-me-block .contact-info a {
+.top-content .about-me-block .contact-info p a {
   color: black;
   font-size: 1.5rem;
 }
 .top-content .about-me-block .social-icons {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 .top-content .bio {
   margin-left: 15%;
@@ -287,6 +289,11 @@ nav a:first-child {
 }
 .skills .code-column .circle-img {
   height: 200px;
+}
+.skills .code-column .python-img {
+  height: 200px;
+  width: 190px;
+  border-radius: 50%;
 }
 .skills .code-column p {
   margin: 15px 0;
@@ -324,4 +331,13 @@ nav a:first-child {
 .training li p {
   margin-bottom: 25px;
   padding-right: 5%;
+}
+footer {
+  background: #304153;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+footer a {
+  color: white;
 }

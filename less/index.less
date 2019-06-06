@@ -68,6 +68,7 @@ table {
 
 html {
 	font-size: @html-font;
+	font-family: "Heebo";
 }
 
 html, body {
@@ -183,16 +184,19 @@ nav {
 			p {
 				// display: inline;
 				margin-bottom: 5px;
+
+				a {
+					// display: inline;
+					color: black;
+					font-size: 1.5rem;
+				}
 			}
-			a {
-				// display: inline;
-				color: black;
-				font-size: 1.5rem;
-			}
+			
 		}
 		.social-icons {
 			display: flex;
-			justify-content: space-between
+			justify-content: space-between;
+			margin-bottom: 10px;
 		}
 	}
 	.bio {
@@ -227,6 +231,12 @@ nav {
 
 		.circle-img {
 			height: 200px;
+		}
+		
+		.python-img {
+			height: 200px;
+			width: 190px;
+			border-radius: 50%;
 		}
 
 		p {
@@ -270,6 +280,17 @@ nav {
 			margin-bottom: 25px;
 			padding-right: 5%;
 		}
+	}
+
+}
+footer {
+	background: @green-font;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+
+	a {
+		color: white;
 	}
 
 }
